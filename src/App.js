@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import "./App.css";
+import AppFunction from "./AppFunction";
+import Login from "./authentication/login";
+import AppClass from "./AppClass";
+import Register from "./authentication/register";
+import Context from "./use Context/use_context";
+import CallBack from "./Callback/CallBack";
+import ScrollPosition from "./custom hooks/scrollPosition";
+import Form from "./custom hooks/form";
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <AppClass /> */}
+      {/* <AppFunction /> */}
+      {/* <Login /> */}
+      {/* <Register /> */}
+      {/* <Context /> */}
+      {/* <CallBack /> */}
+      <ScrollPosition />
+      <Form />
     </div>
   );
 }
-
-export default App;
